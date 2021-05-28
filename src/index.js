@@ -50,7 +50,6 @@ class FaviconRange {
         context.fill()
 
         if(count){
-          console.log(count)
           context.font = this.config.font
           context.textAlign = "center"
           context.textBaseline = "middle"
