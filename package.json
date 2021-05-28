@@ -1,0 +1,40 @@
+{
+  "name": "favicon-range",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "dev": "webpack -p --watch",
+    "build": "webpack -p",
+    "watch": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Kirill Poletaev",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2"
+  },
+  "dependencies": {
+    "babel-loader": "^8.0.6",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  }
+}
