@@ -6,7 +6,7 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'favicon-range.js',
+    filename: 'faviconRange.js',
     libraryExport: 'default',
     libraryTarget: 'umd'
   },
