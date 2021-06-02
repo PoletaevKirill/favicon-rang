@@ -63,10 +63,18 @@ class FaviconRange {
     })
   }
 
+  /**
+   * @returns {boolean}
+   * @public публинчный метод
+   */
   hasBadge() {
     return this.#isSetBadge
   }
 
+  /**
+   * @param {count} count Число или символ, оторый надо отобразить в кружочке
+   * @public публинчный метод
+   */
   setBadge(count = null) {
     if(!["string", "number"].includes(typeof count)) throw new Error(`Param count is not a "string" or "number"`)
     this.#createFaviconWithBadge(count)
@@ -80,6 +88,9 @@ class FaviconRange {
 
   }
 
+  /**
+   * @public публинчный метод
+   */
   removeBadge() {
     this.favicon.href = this.#faviconOriginHref
     this.#isSetBadge = false
